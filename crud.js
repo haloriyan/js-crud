@@ -1,4 +1,4 @@
-gclass CRUD {
+class CRUD {
     constructor(props) {
         this.users = [
             {id: 1, name: 'riyan'},
