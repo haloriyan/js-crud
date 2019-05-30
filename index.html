@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        form { display: none; }
+    </style>
+</head>
+<body>
+    
+<div id="app">
+    <button onclick="app.create()">New User</button>
+    <br /><br />
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th colspan="2">Act</th>
+            </tr>
+        </thead>
+        <tbody id="load">
+        </tbody>
+    </table>
+    <br /><br />
+    <form id="formNew">
+        <h2>New User</h2>
+        <input type="text" id="nama" placeholder="Type to add">
+        <button>Add</button>
+    </form>
+    <form id="formEdit">
+        <h2>Edit User</h2>
+        <input type="hidden" id="iduser">
+        <input type="text" id="namaEdit" placeholder="Type to edit">
+        <button id="test">Add</button>
+    </form>
+</div>
+
+<script src="crud.js"></script>
+
+
+</body>
+</html>
